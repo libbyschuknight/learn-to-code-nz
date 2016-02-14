@@ -41,8 +41,8 @@ h6 {
 
 .intro-message {
     position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .intro-message > h1 {
@@ -63,12 +63,12 @@ h6 {
 
 
 .container {
-  border: 1px dotted blue;
+  /*border: 1px dotted blue;*/
 }
 
 /* Flex Box */
 .flex-container {
-  border: 1px dotted red;
+  /*border: 1px dotted red;*/
 }
 
 
@@ -90,17 +90,20 @@ h6 {
 
 .flex-item {
   border-radius: 5px;
-  background: white;
+  /*border-color: #ccc;*/
+  /*background: white;*/
   padding: 5px;
   width: 300px;
   height: 150px;
   margin-top: 10px;
 
   line-height: 150px;
-  color: black;
+  /*color: #333;*/
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
   font-weight: bold;
   font-size: 3em;
   text-align: center;
+
 }
 
 
