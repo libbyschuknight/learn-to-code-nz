@@ -3,6 +3,8 @@ Learn To Code Nz
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+[![Stories in Ready](https://badge.waffle.io/libbyschuknight/learn-to-code-nz.svg?label=ready&title=Ready)](http://waffle.io/libbyschuknight/learn-to-code-nz)
+
 This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
 provided by the [RailsApps Project](http://railsapps.github.io/).
 
