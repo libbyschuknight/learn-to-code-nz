@@ -4,3 +4,4 @@ class LearningResource < ActiveRecord::Base
   enum location: [ :online_l, :Wellington ]
   enum event_category: [ :course, :club, :individual, :online_e, :workshop ]
 end
+  
