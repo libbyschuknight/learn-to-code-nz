@@ -1,0 +1,31 @@
+<!-- Index page for learning resources, will who unfiltered list of all learning resources -->
+
+<!-- Need to fix what is happening at top of pages -->
+<br>
+<br>
+<br>
+
+<h1>All Learning Resources</h1>
+
+<ul id="learning_resources">
+  <% @learning_resources.each do |learning_resource| %>
+    <li>
+      <%= link_to learning_resource.name, learning_resource_path(learning_resource) %>
+    </li>
+    <li>
+      <%= learning_resource.description %>
+    </li>
+    <li>
+      <%= learning_resource.age_category %>
+    </li>
+    <li>
+      <%= learning_resource.delivery_method %>
+    </li>
+    <li>
+      <%= learning_resource.location %>
+    </li>
+    <li>
+      <%= learning_resource.name %>
+    </li>
+  <% end %>
+</ul>
