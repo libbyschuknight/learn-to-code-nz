@@ -1,0 +1,21 @@
+<!-- New page - first step of adding a new learning resource -->
+
+<!-- Need to fix what is happening at top of pages -->
+<br>
+<br>
+<br>
+
+
+<h1><%= @learning_resource.name %></h1>
+<p><%= @learning_resource.description %></p>
+<p><%= image_tag @learning_resource.image_link %></p>
+<p>Age: <%= @learning_resource.age_category %> </p>
+<p>Method: <%= @learning_resource.delivery_method %> </p>
+<p>Where: <%= @learning_resource.location %> </p>
+<p>Type: <%= @learning_resource.event_category %> </p>
+<p>Cost: <%= @learning_resource.cost %> </p>
+<p><%= @learning_resource.description %> </p>
+<p><%= link_to "website", "http://#{@learning_resource.website_link}", :target => "_blank"%> </p>
+
+
+<%= link_to "<< Back to Learning Resources", learning_resources_path %>

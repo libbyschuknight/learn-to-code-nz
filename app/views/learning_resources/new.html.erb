@@ -1,0 +1,56 @@
+<!-- New page - first step of adding a new learning resource -->
+
+<!-- Need to fix what is happening at top of pages -->
+<br>
+<br>
+<br>
+
+<h1>Create a Learning Resource</h1>
+
+
+<%= form_for(@learning_resource) do |f| %>
+  <ul>
+    <% @learning_resource.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  </ul>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_area :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :age_category %><br>
+    <%= f.select :age_category, LearningResource.age_categories.keys, {} %>
+  </p>
+  <p>
+    <%= f.label :delivery_method %><br />
+    <%= f.select :delivery_method, LearningResource.delivery_methods.keys, {} %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.select :location, LearningResource.locations.keys, {} %>
+  </p>
+  <p>
+    <%= f.label :event_category %><br />
+    <%= f.select :event_category, LearningResource.event_categories.keys, {} %>
+  </p>
+  <p>
+    <%= f.label :cost %><br />
+    <%= f.text_area :cost %>
+  </p>
+  <p>
+    <%= f.label :website_link %><br />
+    <%= f.text_area :website_link %>
+  </p>
+  <p>
+    <%= f.label :image_link %><br />
+    <%= f.text_area :image_link %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

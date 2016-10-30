@@ -1,0 +1,30 @@
+<!-- Index page for learning resources, will who unfiltered list of all learning resources -->
+
+<!-- Need to fix what is happening at top of pages -->
+<br>
+<br>
+<br>
+
+<h1>All Learning Resources</h1>
+
+<div class="row text-center">
+  <% @learning_resources.each do | learning_resource | %>
+    <div class="col-md-3 col-sm-6 hero-feature">
+      <div class="thumbnail">
+        <%= link_to (image_tag (learning_resource.image_link)), learning_resource_path(learning_resource), :class => "learning_resource-home imageBoxShadow" %>
+      </div>
+
+      <div class="caption">
+        <h3> <%= learning_resource.name %> </h3>
+        <p>Age: <%= learning_resource.age_category %> </p>
+        <p>Method: <%= learning_resource.delivery_method %> </p>
+        <p>Where: <%= learning_resource.location %> </p>
+        <p>Type: <%= learning_resource.event_category %> </p>
+        <p>Cost: <%= learning_resource.cost %> </p>
+        <p><%= learning_resource.description %> </p>
+        <%= link_to "website", "http://#{learning_resource.website_link}", :class => "btn btn-primary", :target => "_blank"%>
+        <%= link_to "View", learning_resource_path(learning_resource),  :class => "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
